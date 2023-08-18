@@ -1,0 +1,14 @@
+cc_binary{
+    name: "agwtool",
+    srcs: ["AgwTool.cpp"],
+    vendor: true,
+    shared_libs: [
+        "libcutils",
+        "liblog",
+        "libdl",
+        "libbinder",
+        "libutils",
+        "vendor.yfvet.infrastructure.agw@1.0",
+        "libagwclient",
+    ],
+}
